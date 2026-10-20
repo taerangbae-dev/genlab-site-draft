@@ -1,0 +1,544 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>62. VOC · 미리 알림</title><script>/* 반영본: 반영한 개선 항목(스타일 · 스크립트가 이 표시를 본다) */document.documentElement.className+=" fx-D01 fx-D02 fx-D03 fx-D04 fx-D05 fx-D06 fx-D07 fx-D08 fx-D09 fx-D10 fx-D11 fx-D12 fx-D13 fx-D14 fx-D15 fx-D16 fx-D17 fx-D18 fx-D19 fx-D20 fx-D21 fx-D22 fx-D23 fx-D24 fx-D25 fx-D26 fx-D28 fx-D30 fx-D31 fx-D32 fx-D33 fx-D34 fx-D35 fx-D36 fx-D37 fx-D38 fx-D39 fx-D40 fx-D41 fx-D42 fx-D43 fx-D44 fx-D45 fx-D46 fx-D47 fx-D48 fx-D49 fx-D51 fx-D52 fx-D53 fx-D54 fx-D55 fx-D56 fx-D59 fx-D61 fx-D62 fx-D63 fx-D64 fx-D65 fx-D66 fx-D67 fx-D68";window.FX=(function(){var A=["D01", "D02", "D03", "D04", "D05", "D06", "D07", "D08", "D09", "D10", "D11", "D12", "D13", "D14", "D15", "D16", "D17", "D18", "D19", "D20", "D21", "D22", "D23", "D24", "D25", "D26", "D28", "D30", "D31", "D32", "D33", "D34", "D35", "D36", "D37", "D38", "D39", "D40", "D41", "D42", "D43", "D44", "D45", "D46", "D47", "D48", "D49", "D51", "D52", "D53", "D54", "D55", "D56", "D59", "D61", "D62", "D63", "D64", "D65", "D66", "D67", "D68"];function no(){}return {is:function(i){return A.indexOf(i)>=0},on:no,listen:no,set:no,mode:no,marks:no,ids:A,fixed:[],reloadIds:[],state:function(){return {mode:"after",ov:{},marks:false}}}})();</script><link rel="stylesheet" href="deck.css"></head><body>
+<header class="top"><div class="top-in"><div class="brand">가상 CS 직원 소개서<span class="fx01-to"></span></div><div class="fx23"><button class="fx23-b" type="button" aria-expanded="false" aria-controls="fx23-nav"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 4h11M2.5 8h11M2.5 12h7"/></svg>목차</button></div><nav class="nav" aria-label="장 목록"></nav><div class="pan" role="group" aria-label="고객 판 고르기"><button type="button" data-pan="none" class="on">직접 응대</button><button type="button" data-pan="tool">상담 솔루션 사용</button><button type="button" data-pan="ai">다른 AI 사용</button><button type="button" data-pan="bpo">BPO 위탁</button><button type="button" data-pan="global">해외 K뷰티</button></div><button class="btn fx05-pdf" type="button">PDF 저장</button><button class="btn" id="present" type="button">발표하기</button></div></header>
+<main class="wrap">
+<section class="sl" id="s62" aria-label="62. VOC · 미리 알림"><div class="fit"><div class="ds emb-ds"><iframe class="emb" data-k="voc3" title="VOC · 미리 알림" tabindex="-1" aria-hidden="true"></iframe><script type="text/plain" id="emb-voc3"><style>.top,.pctl{display:none!important}.wrap{padding:0!important;max-width:none!important;gap:0!important}.sl{display:none}.fit{border-radius:0!important;box-shadow:none!important}:root{--display:'ZT Noto','Noto Sans KR','Apple SD Gothic Neo',sans-serif}#v3{display:block!important}</style><title>VOC 분석 3장</title>
+
+<style>
+
+:root{color-scheme:dark;--bg:#081221;--fg:#e9eef6;--muted:#8fa1bb;--line:rgba(255,255,255,.1);--accent:#67E8F9;--hot:#F29A4A;--red:#e5484d;--redbg:#fde8e7;--ink:#1d2433;--sub:#5f6878;--faint:#8a94a6;--ok:#1f9d55;--okbg:#e3f7ea;--warn:#a96a00;--warnbg:#fff4dc;--vio:#5b4bd6;--viobg:#efedff;
+--display:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+html,body{background:var(--bg);color:var(--fg)}
+body{font-family:var(--display);margin:0}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(8,18,33,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1320px;margin:0 auto;padding-inline:20px;padding-block:12px;display:flex;align-items:center;gap:16px}
+.brand{font-weight:800;font-size:17px;white-space:nowrap}
+.nav{display:flex;gap:4px;overflow-x:auto;flex:1;min-width:0}
+.nav a{color:var(--muted);text-decoration:none;font-size:13px;padding:6px 10px;border-radius:8px;white-space:nowrap}
+.nav a b{color:var(--accent);margin-right:5px}
+.nav a:hover,.nav a:focus-visible{background:rgba(255,255,255,.06);color:var(--fg);outline:none}
+.btn{border:0;background:var(--accent);color:#06222b;font-weight:800;font-size:14px;border-radius:9px;padding:9px 16px;cursor:pointer;font-family:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:20px;padding-block:24px 64px;display:flex;flex-direction:column;gap:24px}
+.sl{scroll-margin-top:72px}
+.fit{position:relative;width:100%;max-width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:10px;box-shadow:0 20px 50px rgba(0,0,0,.35);background:#0c1a2e}
+body.pres .top{display:none}
+body.pres .wrap{max-width:none;padding:0;gap:0}
+body.pres .sl{display:none;position:fixed;inset:0;background:#000;align-items:center;justify-content:center}
+body.pres .sl.cur{display:flex}
+body.pres .fit{border-radius:0;box-shadow:none;width:min(100vw,calc(100vh*16/9))}
+.pctl{display:none;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:10;gap:6px;align-items:center;font-size:13px;color:#cfd8e6;background:rgba(0,0,0,.55);padding:6px 8px;border-radius:10px}
+body.pres .pctl{display:flex}
+.pctl button{background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:7px;padding:6px 10px;cursor:pointer;font-family:inherit}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:640px){.top-in,.wrap{padding-inline:16px}}
+
+.cv{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;word-break:keep-all;background:radial-gradient(ellipse at 40% 90%,#11284a 0,#0c1a2e 60%);color:var(--fg)}
+.cv *{box-sizing:border-box}
+.eb{position:absolute;left:128px;top:64px;margin:0;font-size:20px;font-weight:800;letter-spacing:1.5px;color:var(--accent)}
+.eb i{font-style:normal;font-family:var(--mono);color:#fff;background:rgba(103,232,249,.18);border-radius:6px;padding:1px 8px;margin-right:8px}
+.hl{position:absolute;left:128px;top:100px;margin:0;font-size:52px;line-height:1.25;font-weight:900;letter-spacing:-1.3px}
+.hl em{font-style:normal;color:var(--hot)}
+.sub{position:absolute;left:128px;top:176px;margin:0;font-size:22px;color:#9fb0c8}
+.sub b{color:#fff}
+.pg{position:absolute;right:128px;bottom:36px;font-size:16px;color:#7f93b0}
+.note{position:absolute;left:128px;bottom:36px;font-size:15px;color:#7f93b0}
+.st{font-size:13px;font-weight:900;border-radius:6px;padding:2px 8px;white-space:nowrap}
+.s-zt{background:linear-gradient(135deg,#3f74e2,#8b7fe8);color:#fff}.s-tel{background:#1d2433;color:#fff}.s-cp{background:#fdecea;color:#c0262d}.s-ss{background:#03C75A;color:#fff}.s-oy{background:#9ACD32;color:#14351a}
+.fly{position:absolute;left:0;top:0;z-index:9;background:#fff;color:var(--ink);border-radius:12px;padding:8px 14px;font-size:18px;font-weight:800;box-shadow:0 0 0 4px rgba(103,232,249,.85),0 14px 28px rgba(0,0,0,.45);white-space:nowrap;pointer-events:none;display:flex;gap:8px;align-items:center}
+.trail{position:absolute;inset:0;pointer-events:none;z-index:8}
+.trail path{fill:none;stroke:rgba(103,232,249,.5);stroke-width:4;stroke-dasharray:2 12;stroke-linecap:round}
+@keyframes in{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+@keyframes sweep{to{top:100%}}
+
+.pn2{font-size:14px;color:var(--faint);font-weight:700}
+.panel{position:absolute;background:#fff;color:var(--ink);border-radius:20px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.panel h3{margin:0;font-size:22px;font-weight:900;display:flex;align-items:center;gap:10px}
+.panel h3 small{margin-left:auto;font-size:14px;font-weight:700;color:var(--faint)}
+.lb{font-size:14px;font-weight:800;color:var(--faint)}
+.bump{animation:bump .5s}
+@keyframes bump{40%{color:var(--vio)}}
+.stars{color:#f5a623;letter-spacing:1px;font-size:15px}
+.stars s{color:#d9dee6;text-decoration:none}
+mark{background:#ffd3d0;color:#a3141b;border-radius:4px;padding:0 3px;font-weight:800}
+.i0{--c:#e5484d}.i1{--c:#3b82f6}.i2{--c:#7c6cf0}.i3{--c:#22a06b}.i4{--c:#e8a317}.i5{--c:#9b1c22}
+.lv{font-size:13px;font-weight:900;border-radius:6px;padding:2px 8px;white-space:nowrap}
+.rk-u{background:#b4232a;color:#fff}.rk-h{background:var(--red);color:#fff}.rk-m{background:#e8a317;color:#fff}.rk-l{background:#e4e9f0;color:var(--sub)}
+.ping{box-shadow:0 0 0 4px rgba(103,232,249,.85)!important}
+
+
+.mw{left:128px;top:250px;width:470px;height:740px;padding:20px 22px;display:flex;flex-direction:column;gap:8px}
+.mt{display:grid;grid-template-columns:1fr 104px 92px;column-gap:6px;align-items:center}
+.mt .hd{font-size:13px;font-weight:800;color:var(--faint);text-align:right;padding:0 8px 4px}
+.mt .hd:first-child{text-align:left;padding-left:0}
+.mt>.m0,.mt>.cell{border-top:1px solid #f0f2f5}
+.m0{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:900;padding:7px 0;line-height:1.2}
+.m0 small{display:block;font-size:12px;font-weight:700;color:var(--faint)}
+.cell{text-align:right;font-family:var(--mono);font-size:18px;font-weight:600;border-radius:8px;padding:9px 8px;transition:background .3s,box-shadow .3s}
+.cell small{display:block;font-family:var(--display);font-size:11px;font-weight:700;color:var(--faint)}
+.cell.na{color:#c3cad6}
+.cell.ping{background:var(--viobg);color:var(--vio)}
+.mt .tot{font-weight:900;font-size:16px;border-top:2px solid #e3e7ee;padding:10px 0}
+.mt .cell.tt{border-top:2px solid #e3e7ee;color:var(--vio)}
+.stw{border-top:1px solid #eef0f4;padding-top:10px;margin-top:auto;display:flex;flex-direction:column;gap:6px}
+.str{display:grid;grid-template-columns:40px 1fr 52px;gap:10px;align-items:center;font-size:14px}
+.str span:first-child{color:#f5a623;font-weight:800}
+.str .t{height:10px;border-radius:5px;background:#eef1f5;overflow:hidden}.str .t i{display:block;height:100%;background:#f5a623;transition:width .5s}
+.str b{font-family:var(--mono);font-weight:600;text-align:right}
+.aip{left:626px;top:250px;width:430px;height:740px;padding:24px 26px;display:flex;flex-direction:column;gap:14px}
+.aib{font-size:13px;font-weight:900;color:#fff;background:linear-gradient(135deg,#3f74e2,#8b7fe8);border-radius:6px;padding:2px 8px}
+.cur{background:#f6f8fb;border-radius:14px;padding:16px 18px;min-height:150px;display:flex;flex-direction:column;gap:8px}
+.cur .ih{display:flex;align-items:center;gap:8px;font-size:15px}
+.cur .pd{margin-left:auto;font-size:14px;font-weight:800;color:var(--sub)}
+.cur .q{font-size:21px;line-height:1.45;font-weight:700}
+.cur.in{animation:in .4s cubic-bezier(.2,1.3,.4,1)}
+.steps{display:flex;flex-direction:column;gap:10px}
+.sp{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:center}
+.sp>span{font-size:16px;font-weight:800;color:var(--faint)}
+.sp>b{height:48px;border-radius:12px;border:2px dashed #d9dee6;display:flex;align-items:center;padding:0 14px;font-size:19px;font-weight:900;color:transparent;transition:all .3s}
+.sp>b.on{border:2px solid transparent;background:var(--viobg);color:var(--vio)}
+.sp>b.on.iss{background:color-mix(in srgb,var(--c) 14%,#fff);color:var(--c)}
+.aif{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.aif div{background:#f6f8fb;border-radius:12px;padding:12px 14px}
+.aif b{display:block;font-family:var(--mono);font-size:28px;font-weight:600}
+.dist{left:1088px;right:128px;top:250px;height:740px;padding:24px 28px;display:flex;flex-direction:column;gap:12px}
+.ty{display:flex;flex-direction:column;gap:7px}
+.tr{display:grid;grid-template-columns:150px 1fr 56px 64px;gap:10px;align-items:center;font-size:16px;border-radius:8px;padding:2px 4px;transition:background .4s}
+.tr.hi{background:var(--viobg)}
+.tr .t{height:14px;border-radius:7px;background:#eef1f5;overflow:hidden}.tr .t i{display:block;height:100%;background:var(--vio);transition:width .5s;opacity:.8}
+.tr.etc .t i{background:#c3cad6}
+.tr b{font-family:var(--mono);font-weight:600;text-align:right;font-size:15px}
+.tr em{font-style:normal;font-family:var(--mono);font-weight:600;text-align:right;color:var(--vio);font-size:15px}
+.sec{border-top:1px solid #eef0f4;padding-top:12px;display:flex;flex-direction:column;gap:8px}
+.stk{display:flex;height:26px;border-radius:8px;overflow:hidden;gap:2px}
+.stk i{display:block;height:100%;background:var(--c);transition:flex-grow .5s}
+.lg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px 12px;font-size:15px}
+.lg span{display:flex;align-items:center;gap:6px;border-radius:6px;padding:1px 4px;transition:background .4s}
+.lg span.hi{background:var(--viobg)}
+.lg span::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c);flex:none}
+.lg b{margin-left:auto;font-family:var(--mono);font-weight:600}
+.lg4{grid-template-columns:repeat(4,1fr)}
+
+
+.jw{position:absolute;left:128px;right:128px;top:272px;height:180px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.js{display:flex;flex-direction:column;gap:8px;min-width:0}
+.chev{height:44px;display:grid;place-items:center;font-size:19px;font-weight:900;letter-spacing:1px;clip-path:polygon(0 0,calc(100% - 18px) 0,100% 50%,calc(100% - 18px) 100%,0 100%,18px 50%)}
+.js:first-child .chev{clip-path:polygon(0 0,calc(100% - 18px) 0,100% 50%,calc(100% - 18px) 100%,0 100%)}
+.js:nth-child(1) .chev{background:#dfe6f0;color:#0c1a2e}.js:nth-child(2) .chev{background:#c7d3e3;color:#0c1a2e}.js:nth-child(3) .chev{background:#a9bad2;color:#0c1a2e}.js:nth-child(4) .chev{background:#7f95b6;color:#fff}.js:nth-child(5) .chev{background:#4b6188;color:#fff}
+.jc{flex:1;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;display:grid;grid-template-columns:1fr auto;gap:2px 8px;align-content:start;transition:box-shadow .3s}
+.jc .v{font-family:var(--mono);font-size:30px;font-weight:600;line-height:1.15}
+.jc .v.hot{color:var(--red)}
+.jc .r{text-align:right}
+.jc .why{grid-column:1/-1;margin-top:6px;font-size:15px;color:var(--sub)}
+.jc .why b{color:var(--ink)}
+.ptw{left:128px;top:470px;width:1040px;height:520px;padding:22px 26px;display:flex;flex-direction:column;gap:12px}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.kpi div{background:#f6f8fb;border-radius:12px;padding:10px 14px;display:flex;align-items:baseline;gap:10px}
+.kpi b{font-family:var(--mono);font-size:26px;font-weight:600}
+.kpi div:last-child b{color:#b4232a}
+.pt{width:100%;border-collapse:collapse;font-size:17px}
+.pt th{font-size:13px;color:var(--faint);font-weight:800;text-align:right;padding:0 8px 6px;white-space:nowrap}
+.pt th:first-child,.pt td:first-child{text-align:left}
+.pt td{padding:15px 8px;border-top:1px solid #f0f2f5;text-align:right;white-space:nowrap;font-family:var(--mono);transition:background .4s}
+.pt td:first-child{font-family:var(--display);font-weight:900}
+.pt td.sg{font-family:var(--display);text-align:left}
+.pt tr.hi td{background:#fff7e6}
+.sig{font-size:14px;font-weight:900;border-radius:6px;padding:2px 8px}
+.sig.u{background:#fde8e7;color:#b4232a}.sig.h{background:var(--warnbg);color:var(--warn)}.sig.n{color:var(--faint);font-weight:700}
+.trk{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:15px}
+.trk span{font-weight:800;border-radius:8px;padding:4px 10px;background:#f1f3f7;color:#3d4652}
+.trk span.g{background:var(--okbg);color:var(--ok)}.trk span.r{background:#fde8e7;color:#b4232a}
+.tkw{left:1200px;right:128px;top:470px;height:520px;padding:22px 24px;display:flex;flex-direction:column;gap:10px}
+.lane{display:grid;grid-template-columns:76px 1fr;gap:10px;flex:1;min-height:0}
+.lane:last-child{flex:1.35}
+.lane>b{font-size:14px;font-weight:900;color:var(--faint);padding-top:10px;line-height:1.3}
+.lane>div{background:#f6f8fb;border-radius:12px;padding:8px;display:flex;flex-direction:column}
+.tk{background:#fff;border:2px solid #e6e9ef;border-radius:10px;padding:8px 12px;display:flex;flex-direction:column;gap:2px;font-size:15px;line-height:1.35;animation:in .5s cubic-bezier(.2,1.3,.4,1)}
+.tk .id{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.tk b{font-size:16px}
+.tk .why{font-size:13px;color:var(--sub)}
+.tk .loss{font-size:13px;font-weight:800;color:#b4232a}
+.tk.new{border-color:#e8a317;box-shadow:0 0 0 3px var(--warnbg)}
+.tk .bar2{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;color:var(--sub)}
+.tk .bar2 i{display:block;height:8px;border-radius:4px;background:#f3b4b2}.tk .bar2 i.af{background:#22a06b}
+.tk .res{font-size:14px;font-weight:900;color:var(--ok)}
+
+
+.chat{position:absolute;left:128px;top:250px;width:580px;height:740px;background:#e9edf3;border-radius:20px;padding:10px;color:var(--ink);display:flex;flex-direction:column;gap:8px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.ch-h{background:#fff;border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:10px;font-size:19px;font-weight:900}
+.ch-h small{margin-left:auto;font-size:14px;color:#0e9f6e}
+.ms{flex:1;background:#fafbfc;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px;overflow:hidden}
+.m{max-width:88%;padding:12px 16px;border-radius:16px;font-size:20px;line-height:1.5;animation:in .35s ease-out}
+.m.c{align-self:flex-start;background:#fff;border:1.5px solid #e3e7ee}
+.m.a{align-self:flex-end;background:#eef1f5}
+.m .who{display:block;font-size:13px;font-weight:800;color:var(--faint)}
+.m.bad{background:#fff1f0;box-shadow:inset 0 0 0 2px #f3b4b2}
+.m.bad.a .tx{text-decoration:underline wavy var(--red);text-underline-offset:4px}
+.m .fl{display:flex;gap:5px;margin-top:6px}
+.m .fl span{font-size:13px;font-weight:900;color:#fff;background:var(--red);border-radius:6px;padding:1px 8px}
+.rv{background:#fff;border:1.5px solid #e3e7ee;border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;font-size:20px;line-height:1.5;animation:in .35s ease-out}
+.rv .ih{display:flex;align-items:center;gap:8px;font-size:16px}.rv .stars{font-size:18px}.rv .pd{margin-left:auto;font-size:14px;font-weight:800;color:var(--sub)}
+.rv.bad{background:#fff1f0;box-shadow:inset 0 0 0 2px #f3b4b2}
+.rv.soft mark{background:var(--warnbg);color:var(--warn)}
+.sug{align-self:flex-end;max-width:88%;background:var(--okbg);border:2px dashed #a7e3bf;border-radius:16px;padding:12px 16px;font-size:18px;line-height:1.5;color:#14532d;animation:in .4s}
+.sug b{display:block;font-size:13px;color:var(--ok)}
+.kw{left:740px;top:250px;width:560px;height:740px;padding:24px 26px;display:flex;flex-direction:column;gap:12px}
+.nwb{font-size:13px;font-weight:900;color:#b0186f;background:#fde7f3;border-radius:6px;padding:2px 8px}
+.rl{display:grid;grid-template-columns:1fr 62px;gap:6px 10px;padding:12px 14px;border-radius:14px;background:#f6f8fb;transition:background .3s,box-shadow .3s}
+.rl.fire{background:#fff1f0;box-shadow:0 0 0 3px var(--red)}
+.rl.fire.soft{background:#fffaf0;box-shadow:0 0 0 3px #e8a317}
+.rl .nm{display:flex;align-items:center;gap:8px;font-size:18px;font-weight:900}
+.rl .nm small{font-size:14px;font-weight:800;color:var(--sub)}
+.rl .hc{grid-row:1/3;grid-column:2;align-self:center;text-align:right;font-family:var(--mono);font-size:24px;font-weight:600}
+.rl .hc small{display:block;font-family:var(--display);font-size:12px;color:var(--faint);font-weight:700}
+.ws{display:flex;flex-wrap:wrap;gap:5px}
+.ws span{font-size:14px;font-weight:800;background:#fff;border:1.5px solid #e3e7ee;border-radius:7px;padding:2px 8px;color:#3d4652;transition:background .3s,color .3s}
+.ws span.on{background:var(--red);border-color:var(--red);color:#fff}
+.rl.soft .ws span.on{background:#e8a317;border-color:#e8a317}
+.ws span.ai{border-style:dashed;color:var(--vio)}
+.ag{width:100%;border-collapse:collapse;font-size:17px}
+.ag th{text-align:right;font-size:13px;color:var(--faint);font-weight:800;padding:0 6px 6px}
+.ag th:first-child,.ag td:first-child{text-align:left}
+.ag td{padding:8px 6px;border-top:1px solid #f0f2f5;text-align:right;white-space:nowrap;transition:background .4s}
+.ag td:first-child{display:flex;align-items:center;gap:10px;font-weight:800}
+.av{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:900;color:#fff;background:#7c8aa5}
+.av.ai{background:linear-gradient(135deg,#3f74e2,#8b7fe8)}
+.sc{font-family:var(--mono);font-weight:600;font-size:18px}.sc.g{color:var(--ok)}.sc.y{color:var(--warn)}.sc.r{color:var(--red)}
+.wn{display:inline-grid;place-items:center;min-width:28px;height:24px;border-radius:12px;background:#f1f3f7;font-family:var(--mono);font-size:14px}
+.wn.on{background:var(--red);color:#fff}
+.ag tr.hit td{background:#fff1f0}
+.sk{left:1332px;right:128px;top:250px;height:384px;color:#1d1c1d;display:flex;flex-direction:column;overflow:hidden}
+.sk-h{background:#3f0e40;color:#fff;padding:14px 20px;display:flex;align-items:center;gap:10px;font-size:18px;font-weight:900}
+.sk-h small{margin-left:auto;font-size:13px;font-weight:700;color:#d6c4d7}
+.sk-ms{flex:1;display:flex;flex-direction:column;gap:2px;padding:8px 6px;overflow:hidden}
+.sm{display:grid;grid-template-columns:38px 1fr;gap:10px;padding:8px 12px;border-radius:10px;font-size:15px;line-height:1.45;animation:in .4s cubic-bezier(.2,1.3,.4,1)}
+.sm.fresh{background:#fff8e1}
+.sav{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,#3f74e2,#8b7fe8);color:#fff;display:grid;place-items:center;font-weight:900;font-size:14px}
+.sn{display:flex;align-items:center;gap:6px;font-size:14px}
+.sn em{font-style:normal;font-size:11px;font-weight:800;background:#e8e8e8;color:#616061;border-radius:3px;padding:0 4px}
+.sn time{font-size:12px;color:#8a8a8a}
+.sn .sch{margin-left:auto;font-size:13px;font-weight:800;color:#1264a3}
+.stt{font-weight:900;font-size:16px}
+.stt.u{color:#b4232a}.stt.t{color:var(--vio)}
+.mn{background:#fff3c4;color:#1264a3;font-weight:800;border-radius:3px;padding:0 2px}
+.zn{left:1332px;right:128px;top:654px;height:336px;display:flex;flex-direction:column;overflow:hidden}
+.zn-h{background:linear-gradient(135deg,#3f74e2,#8b7fe8);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:10px;font-size:18px;font-weight:900}
+.zn-h small{margin-left:auto;font-size:13px;font-weight:700;opacity:.85}
+.zn-ms{flex:1;display:flex;flex-direction:column;gap:8px;padding:10px 12px;overflow:hidden}
+.zi{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:10px 12px;border-radius:12px;background:#f6f8fb;font-size:15px;line-height:1.4;border-left:4px solid #c3cad6;animation:in .4s cubic-bezier(.2,1.3,.4,1)}
+.zi i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-style:normal;color:#fff;font-weight:900;background:#7c8aa5}
+.zi b{display:block;font-size:16px}
+.zi small{color:var(--faint)}
+.zi.u{border-left-color:#b4232a;background:#fff4f3}.zi.u i{background:#b4232a}
+.zi.t{border-left-color:var(--vio);background:#f7f6ff}.zi.t i{background:var(--vio)}
+.zi.r{border-left-color:var(--ok)}.zi.r i{background:var(--ok)}
+
+
+.cv{background:#F6F8FB!important;color:#0f1b2d!important}
+.eb{left:96px!important;top:56px!important;font-size:26px!important;font-weight:700!important;letter-spacing:0!important;color:#3d4652!important}
+.eb i{display:none}
+.chd{display:inline-flex;gap:5px;margin-right:12px;vertical-align:middle}
+.chd b{width:9px;height:9px;border-radius:50%;background:#cfd8e6;display:block}
+.chd b.on{width:26px;border-radius:5px;background:linear-gradient(90deg,#3f74e2,#8b7fe8)}
+.hl{left:0!important;right:0!important;top:96px!important;text-align:center;font-size:60px!important;letter-spacing:-1.2px!important;color:#0f1b2d}
+.hl em{color:#2f6fe4!important}
+.sub{left:0!important;right:0!important;top:184px!important;text-align:center;font-size:26px!important;line-height:1.55;color:#4b5868!important}
+.sub b{color:#0f1b2d!important;font-weight:800}
+.note{color:#8a96a8!important;font-size:17px!important}
+.panel,.chat{box-shadow:0 24px 60px rgba(15,27,45,.08)!important;border:1.5px solid #e1e7ef}
+.chat{background:#eef2f7!important}
+.trail path{stroke:rgba(47,111,228,.55)!important}
+.fly{box-shadow:0 0 0 3px #2f6fe4,0 14px 28px rgba(15,27,45,.25)!important}
+.ping{box-shadow:0 0 0 4px rgba(47,111,228,.55)!important}
+.jc{border:1.5px solid #e1e7ef}
+.lgt{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.lgt svg{width:28px;height:28px;display:block}
+.lgt.lgs{width:26px;height:26px;border-radius:7px}.lgt.lgs svg{width:19px;height:19px}
+.sk-h svg{width:24px;height:24px}
+
+
+.scan{overflow:hidden}
+.cur.scan,.ms{position:relative}
+.scan::after,.ms::after{content:"";position:absolute;left:0;right:0;top:-120px;height:120px;pointer-events:none;z-index:3;background:linear-gradient(180deg,rgba(47,111,228,0),rgba(47,111,228,.07) 60%,rgba(47,111,228,.35) 97%,rgba(103,232,249,.9) 100%);animation:scanv 2.6s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes scanv{from{top:-120px}to{top:100%}}
+.scn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800;color:#2f6fe4;background:#eaf1ff;border-radius:999px;padding:3px 10px}
+.scn i{width:8px;height:8px;border-radius:50%;background:#2f6fe4;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.25}}
+.zing{position:absolute;z-index:12;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:50%;border:3px solid #2f6fe4;pointer-events:none;animation:zing .75s ease-out forwards}
+.zing.r{border-color:#e5322d}
+@keyframes zing{from{transform:scale(.3);opacity:1}to{transform:scale(4.2);opacity:0}}
+.jtag{position:absolute;left:128px;top:240px;font-size:15px;font-weight:800;color:#2f6fe4;background:#eaf1ff;border-radius:999px;padding:4px 12px}
+@media (prefers-reduced-motion:reduce){.cv *{animation:none!important;transition:none!important}}
+</style>
+
+<header class="top"><div class="top-in">
+  <div class="brand">VOC 분석 대행</div>
+  <nav class="nav"><a href="#v1"><b>1</b>한눈에 보기</a><a href="#v2"><b>2</b>불만 지점 찾기</a><a href="#v3"><b>3</b>미리 알림</a></nav>
+  <button class="btn" id="present" type="button">발표하기</button>
+</div></header>
+
+<main class="wrap">
+
+<section class="sl" id="v1"><div class="fit"><div class="cv" id="c1">
+  <p class="eb"><i>1/3</i><span class="chd"><b class="on"></b><b></b><b></b></span>VOC 분석 대행 · 한눈에 보기</p>
+  <h1 class="hl">고객이 <em>무엇을, 얼마나, 왜</em> 묻는지 한눈에 봅니다</h1>
+  <p class="sub">몰마다 흩어진 상담·게시판 문의와 리뷰를 AI가 빠짐없이 읽습니다. <b>어떤 문의가 몇 건, 몇 %인지 다 보여 드립니다.</b></p>
+  <section class="panel mw scan"><h3>어디서 모으나<span class="scn"><i></i>수집 중</span><small>이번 달 · 몰별</small></h3>
+    <div class="mt" id="mt"></div>
+    <div class="stw"><div class="lb">리뷰 별점 · 6개 몰 합산</div><div id="stars" style="display:flex;flex-direction:column;gap:5px"></div></div>
+  <%%/section>
+  <section class="panel aip"><h3><span class="aib">AI</span>한 건씩 읽고 나눕니다<span class="scn"><i></i>스캔 중</span></h3>
+    <div class="cur scan" id="cur"></div>
+    <div class="steps"><div class="sp"><span>어떤 상품</span><b id="sp0"></b></div><div class="sp"><span>무슨 문의</span><b id="sp1"></b></div><div class="sp"><span>어떤 문제</span><b id="sp2" class="iss"></b></div><div class="sp"><span>구매 후 언제</span><b id="sp3"></b></div></div>
+    <div class="aif"><div><span class="lb">이번 달 모은 VOC</span><b id="tot"></b></div><div><span class="lb">직원이 직접 나눈 건</span><b>0건</b></div></div><%%/section>
+  <section class="panel dist"><h3>무슨 문의가 많은가<small>이번 달 · 건수 · 비율</small></h3>
+    <div class="ty" id="ty"></div>
+    <div class="sec"><h3 style="font-size:19px">어떤 문제인가<small>6가지로 묶어 담당 팀에 연결</small></h3><div class="stk" id="isk"></div><div class="lg" id="isl"></div></div>
+    <div class="sec"><h3 style="font-size:19px">교환·반품은 누구 책임인가<small>제조 · 물류 · 고객 · 안내</small></h3><div class="stk" id="fk"></div><div class="lg lg4" id="fl"></div></div><%%/section>
+  <svg class="trail" id="tr1" viewBox="0 0 1920 1080" aria-hidden="true"></svg>
+  <p class="note">상품명과 숫자는 예시입니다</p>
+</div></div><%%/section>
+
+
+<section class="sl" id="v2"><div class="fit"><div class="cv" id="c2">
+  <p class="eb"><i>2/3</i><span class="chd"><b></b><b class="on"></b><b></b></span>VOC 분석 대행 · 불만 지점 찾기</p>
+  <h1 class="hl">고객 여정을 따라 <em>불만이 생기는 곳</em>을 짚어 드립니다</h1>
+  <p class="sub">어떤 상품의 어떤 문제가 원인인지, 무엇을 고치면 되는지 보여 드립니다. <b>고친 뒤 실제로 줄었는지도 확인합니다.</b></p>
+  <span class="jtag">고객 여정 따라 보기 · 단계마다 문의가 얼마나, 왜 생기는지</span><section class="jw" id="jw"><%%/section>
+  <section class="panel ptw scan"><h3>어떤 상품이, 무엇이 문제인가<span class="scn"><i></i>AI가 매일 확인</span><small>최근 30일</small></h3>
+    <div class="kpi"><div><span class="lb">전체 VOC</span><b>3,612</b><span class="pn2">건</span></div><div><span class="lb">불만 비율</span><b>19.4%</b></div><div><span class="lb">줄일 수 있는 손실</span><b>1,240만 원</b></div></div>
+    <table class="pt"><thead><tr><th>상품</th><th>문의</th><th>리뷰</th><th>별점</th><th>판매 1,000개당</th><th>불만</th><th style="text-align:left">요즘 늘어난 말</th><th>급한 정도</th></tr></thead><tbody id="pt"></tbody></table>
+    <div class="trk"><span class="lb" style="margin-right:4px">지켜보는 말 · 정해 주신 단어를 매일 셉니다</span><span class="r">타는 냄새 <b id="tk-burn">6</b></span><span>물 샘 <b id="tk-leak">38</b></span><span>소음 41</span><span class="g">조용해요 54</span><span class="g">금방 말라요 37</span></div><%%/section>
+  <section class="panel tkw"><h3>무엇을 고치면 되나<small>담당 팀에 개선 요청</small></h3>
+    <div class="lane"><b>새 요청</b><div id="l0"></div></div>
+    <div class="lane"><b>고치는 중</b><div id="l1"></div></div>
+    <div class="lane"><b>4주 뒤 확인</b><div id="l2"></div></div><%%/section>
+  <svg class="trail" id="tr2" viewBox="0 0 1920 1080" aria-hidden="true"></svg>
+  <p class="note">상품명과 숫자는 예시입니다 · 안전·법적 문제는 1건이라도 긴급으로 올립니다</p>
+</div></div><%%/section>
+
+
+<section class="sl" id="v3"><div class="fit"><div class="cv" id="c3">
+  <p class="eb"><i>3/3</i><span class="chd"><b></b><b></b><b class="on"></b></span>VOC 분석 대행 · 미리 알림</p>
+  <h1 class="hl">리뷰·CS·상담원 응대, <em>문제 되기 전에</em> 알려 드립니다</h1>
+  <p class="sub">지금 들어오는 리뷰와 문의, 상담원 답변까지 AI가 계속 지켜봅니다. <b>위험한 말이 보이면 슬랙·제로톡으로 바로 알립니다.</b></p>
+  <section class="chat"><div class="ch-h" id="chh"></div><div class="ms" id="ms"></div><%%/section>
+  <section class="panel kw"><h3>이런 말을 잡습니다<span class="scn"><i></i>24시간 확인</span><small>이번 주</small></h3>
+    <div id="rules" style="display:flex;flex-direction:column;gap:8px"></div>
+    <div class="lb" style="margin-top:4px">상담원 응대 품질 <span class="nwb">새 기능</span></div>
+    <table class="ag"><thead><tr><th>상담원</th><th>응대</th><th>친절 점수</th><th>주의</th></tr></thead><tbody id="ag"></tbody></table><%%/section>
+  <section class="panel sk"><div class="sk-h"><svg viewBox="0 0 24 24"><path fill="#E01E5A" d="M5 15a2 2 0 1 1-2-2h2zm1 0a2 2 0 1 1 4 0v5a2 2 0 1 1-4 0z"/><path fill="#36C5F0" d="M9 5a2 2 0 1 1 2-2v2zm0 1a2 2 0 1 1 0 4H4a2 2 0 1 1 0-4z"/><path fill="#2EB67D" d="M19 9a2 2 0 1 1 2 2h-2zm-1 0a2 2 0 1 1-4 0V4a2 2 0 1 1 4 0z"/><path fill="#ECB22E" d="M15 19a2 2 0 1 1-2 2v-2zm0-1a2 2 0 1 1 0-4h5a2 2 0 1 1 0 4z"/></svg>슬랙으로 알림<small># cs-긴급 · # 품질-알림</small></div><div class="sk-ms" id="skms"></div><%%/section>
+  <section class="panel zn"><div class="zn-h" id="znh">제로톡으로 알림<small>CS팀장 · 품질팀장 앱</small></div><div class="zn-ms" id="znms"></div><%%/section>
+  <p class="note">거친 응대 감지는 새 기능 기획안 · 대화와 숫자는 예시입니다</p>
+</div></div><%%/section>
+</main>
+<div class="pctl"><button type="button" id="prev">←</button><span id="pn">1 / 3</span><button type="button" id="next">→</button><button type="button" id="exit">닫기</button></div>
+
+<script>
+(function(){
+var reduce=false;
+var $=function(id){return document.getElementById(id)};
+function fmt(n){return n.toLocaleString('ko-KR')}
+function pct(a,b){return(a/b*100).toFixed(1)+'%'}
+var cvs=[].slice.call(document.querySelectorAll('.cv')),K={};
+function scale(){cvs.forEach(function(c){var w=c.parentElement.clientWidth;if(w){K[c.id]=w/1920;c.style.transform='scale('+K[c.id]+')'}})}
+if(window.ResizeObserver){var ro=new ResizeObserver(scale);cvs.forEach(function(c){ro.observe(c.parentElement)})}
+window.addEventListener('resize',scale);scale();
+function later(f,ms){return setTimeout(function(){if(window.__ztHold){(window.__ztQ=window.__ztQ||[]).push(f);return}f()},reduce?Math.min(ms,30):ms)}
+function pos(cv,el){var a=el.getBoundingClientRect(),b=cv.getBoundingClientRect(),k=K[cv.id]||1;return{x:(a.left-b.left)/k,y:(a.top-b.top)/k,w:a.width/k,h:a.height/k}}
+function q(p,t){var u=1-t;return[u*u*p[0]+2*u*t*p[2]+t*t*p[4],u*u*p[1]+2*u*t*p[3]+t*t*p[5]]}
+function fly(tr,el,a,b,dur,done){
+  var p=[a[0],a[1],(a[0]+b[0])/2,Math.min(a[1],b[1])-90,b[0],b[1]];
+  tr.innerHTML='<path d="M'+p[0]+' '+p[1]+' Q'+p[2]+' '+p[3]+' '+p[4]+' '+p[5]+'"/>';
+  var t0=performance.now();
+  requestAnimationFrame(function f(ts){var t=reduce?1:Math.min(1,Math.max(0,(ts-t0)/dur)),e=t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2,pt=q(p,e);
+    el.style.transform='translate('+(pt[0]-el.offsetWidth/2)+'px,'+(pt[1]-el.offsetHeight/2)+'px)';
+    if(t<1)requestAnimationFrame(f);else{tr.innerHTML='';done()}});
+}
+function flyChip(cv,tr,html,from,to,done){var c=document.createElement('div');c.className='fly';c.innerHTML=html;cv.appendChild(c);
+  var a=pos(cv,from),b=pos(cv,to);fly(tr,c,[a.x+a.w*.8,a.y+a.h/2],[b.x+b.w*.3,b.y+b.h/2],650,function(){c.remove();done&&done()})}
+function stars(n){var s='';for(var i=0;i<5;i++)s+=i<n?'★':'<s>★</s>';return'<span class="stars">'+s+'</span>'}
+function bump(el){el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump')}
+function zing(el,red){var cv=el.closest('.cv');if(!cv)return;var p=pos(cv,el),z=document.createElement('div');z.className='zing'+(red?' r':'');z.style.left=(p.x+p.w/2)+'px';z.style.top=(p.y+p.h/2)+'px';cv.appendChild(z);later(function(){z.remove()},800)}
+function ping(el,ms){el.classList.add('ping');later(function(){el.classList.remove('ping')},ms||900)}
+var SRC={zt:['s-zt','제로톡 상담'],cp:['s-cp','쿠팡 리뷰'],oy:['s-oy','올리브영 리뷰']};
+
+
+
+var ML=[['zt','제로톡 상담','자사 상담 채널','상담',1284,null],['oy','올리브영','상품 Q&A','Q&A',48,219],['ms','무신사','상품 문의','문의',61,133],['c29','29CM','상품 문의','문의',38,96],
+ ['nv','네이버','스마트스토어','문의',186,371],['cp','쿠팡','상품 문의','문의',154,642],['c24','카페24','자사몰 게시판','게시판',212,168]];
+function txt(t,fs,y,c){return'<svg viewBox="0 0 24 24"><text x="12" y="'+y+'" text-anchor="middle" font-size="'+fs+'" font-weight="900" fill="'+c+'" font-family="Arial,sans-serif" letter-spacing="-.5">'+t+'</text></svg>'}
+var LOGO={
+ zt:['#fff','<svg viewBox="0 0 100 100"><defs><linearGradient id="vg_s62" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#78cdf0"/><stop offset=".38" stop-color="#3f74e2"/><stop offset=".72" stop-color="#6d88ea"/><stop offset="1" stop-color="#e7aab6"/></linearGradient></defs><path fill="url(#vg_s62)" fill-rule="evenodd" d="M8 92 L8 50 A42 42 0 1 1 50 92 Z M29 71 L29 50 A21 21 0 1 1 50 71 Z"/></svg>'],
+ c24:['#2b59ff',txt('24',12,16.3,'#fff')],
+ nv:['#03C75A','<svg viewBox="0 0 24 24" fill="#fff"><path d="M14.6 12.6 9.2 5H5.5v14h3.9v-7.6L14.8 19h3.7V5h-3.9z"/></svg>'],
+ cp:['#fff',txt('c',18,18.5,'#e5322d')],
+ ms:['#000',txt('M',15,17.4,'#fff')],
+ c29:['#000',txt('29',12,16.3,'#fff')],
+ oy:['#8dc63f',txt('OY',9.5,15.5,'#fff')]
+};
+var gid=0;
+function logo(k,sm){gid++;return'<span class="lgt'+(sm?' lgs':'')+'" style="background:'+LOGO[k][0]+'">'+LOGO[k][1].replace(/"vg"/,'"vg'+gid+'"').replace('url(#vg_s62)','url(#vg'+gid+')')+'</span>'}
+function mi(k){for(var i=0;i<ML.length;i++)if(ML[i][0]===k)return i}
+var SR=[['★5',847],['★4',344],['★3',146],['★2',114],['★1',178]];
+var TY=[['사용 방법 문의',598],['배송 일정 문의',521],['교환·반품 요청',452],['작동 불량',380],['소음·진동',283],['물 샘·누수',215],['가격·프로모션',179],['기타 12개 유형',984]];
+var IS=[['제품 품질',1045],['배송/물류',609],['응대/사후 처리',320],['안내/정책',1430],['재고/공급',157],['안전/법적',51]];
+var FT=[['제조',41,'i0'],['물류',18,'i1'],['고객 변심',29,'i4'],['안내 부족',12,'i3']];
+var STG=['구매','배송','초기 불량','사용 중','A/S'];
+
+var F=[
+ ['cp','r',2,'무선 탁상 선풍기','바람 세기 바꿀 때마다 덜덜거려요',4,0,3],
+ ['zt','q',0,'초음파 가습기 3L','물통 아래로 물이 새요',5,0,3],
+ ['nv','q',0,'BLDC 드라이기','일주일째인데 언제 오는지 모르겠어요',1,1,1],
+ ['oy','r',3,'음파 전동칫솔','모드 바꾸는 법을 모르겠어요',0,3,3],
+ ['cp','r',1,'무선 탁상 선풍기','충전하다가 타는 냄새가 났어요',3,5,2],
+ ['c24','q',0,'BLDC 드라이기','교환 접수했는데 회수가 안 와요',2,2,2],
+ ['ms','r',2,'초음파 가습기 3L','어제 샀는데 오늘 더 싸졌네요',6,3,0],
+ ['nv','r',2,'초음파 가습기 3L','물 보충할 때마다 바닥이 젖어요',5,0,3],
+ ['c29','r',2,'BLDC 드라이기','주문한 지 5일인데 아직 출고 전이에요',1,1,1]
+];
+function total(){return ML.reduce(function(a,m){return a+m[4]+(m[5]||0)},0)}
+function drawSrc(hi,kind){
+  var tq=0,tr=0,h='<span class="hd">채널</span><span class="hd">상담·게시판</span><span class="hd">리뷰</span>';
+  ML.forEach(function(m,i){tq+=m[4];tr+=m[5]||0;
+    h+='<span class="m0">'+logo(m[0])+'<span>'+m[1]+'<small>'+m[2]+'</small></span></span>'+
+     '<span class="cell'+(i===hi&&kind==='q'?' ping':'')+'" id="cq'+i+'">'+fmt(m[4])+'<small>'+m[3]+'</small></span>'+
+     (m[5]==null?'<span class="cell na">—</span>':'<span class="cell'+(i===hi&&kind==='r'?' ping':'')+'" id="cr'+i+'">'+fmt(m[5])+'<small>리뷰</small></span>');
+  });
+  h+='<span class="tot">합계 '+fmt(tq+tr)+'건</span><span class="cell tt">'+fmt(tq)+'</span><span class="cell tt">'+fmt(tr)+'</span>';
+  $('mt').innerHTML=h;$('tot').textContent=fmt(tq+tr)}
+function drawStars(){var s=SR.reduce(function(a,x){return a+x[1]},0);$('stars').innerHTML=SR.map(function(x){return'<div class="str"><span>'+x[0]+'</span><span class="t"><i style="width:'+(x[1]/s*100)+'%"></i></span><b>'+pct(x[1],s).replace('.0','')+'</b></div>'}).join('')}
+function drawTy(hi){var t=total(),m=TY[0][1];TY.forEach(function(x){if(x!==TY[7]&&x[1]>m)m=x[1]});
+  $('ty').innerHTML=TY.map(function(x,i){return'<div class="tr'+(i===7?' etc':'')+(i===hi?' hi':'')+'" id="ty'+i+'"><span>'+x[0]+'</span><span class="t"><i style="width:'+Math.min(100,x[1]/m*100)+'%"></i></span><b>'+fmt(x[1])+'</b><em>'+pct(x[1],t)+'</em></div>'}).join('')}
+function drawIs(hi){var t=total();$('isk').innerHTML=IS.map(function(x,i){return'<i class="i'+i+'" style="flex-grow:'+x[1]+'"></i>'}).join('');
+  $('isl').innerHTML=IS.map(function(x,i){return'<span class="i'+i+(i===hi?' hi':'')+'">'+x[0]+'<b>'+pct(x[1],t)+'</b></span>'}).join('')}
+function drawFt(){$('fk').innerHTML=FT.map(function(x){return'<i class="'+x[2]+'" style="flex-grow:'+x[1]+'"></i>'}).join('');$('fl').innerHTML=FT.map(function(x){return'<span class="'+x[2]+'">'+x[0]+'<b>'+x[1]+'%</b></span>'}).join('')}
+var fi=0,c1=$('c1');
+function next1(){
+  var f=F[fi%F.length];fi++;var i=mi(f[0]),m=ML[i],isR=f[1]==='r',lab=f[0]==='zt'?m[1]:m[1]+' '+(isR?'리뷰':m[3]);
+  if(isR)m[5]++;else m[4]++;drawSrc(i,f[1]);
+  if(f[2]){SR[5-f[2]][1]++;drawStars()}
+  for(var k=0;k<4;k++){var b=$('sp'+k);b.className=k===2?'iss':'';b.textContent=''}
+  flyChip(c1,$('tr1'),logo(f[0],1)+lab,$((isR?'cr':'cq')+i),$('cur'),function(){
+    var cur=$('cur');cur.className='cur scan in';zing(cur);cur.innerHTML='<div class="ih">'+logo(f[0],1)+'<b>'+lab+'</b>'+(f[2]?stars(f[2]):'')+'<span class="pd">'+f[3]+'</span></div><div class="q">“'+f[4]+'”</div>';
+    var vals=[f[3],TY[f[5]][0],IS[f[6]][0],STG[f[7]]];
+    vals.forEach(function(v,k){later(function(){var b=$('sp'+k);b.textContent=v;b.className=(k===2?'iss i'+f[6]:'')+' on'},300+k*280)});
+    later(function(){flyChip(c1,$('tr1'),TY[f[5]][0],$('sp1'),$('ty'+f[5]),function(){TY[f[5]][1]++;IS[f[6]][1]++;drawTy(f[5]);drawIs(f[6]);drawSrc(-1)})},1500);
+  });
+  later(next1,3400);
+}
+
+
+var JS=[['구 매','7%','0.02%',0,'가격·프로모션'],['배 송','17%','0.04%',0,'배송 일정'],['초기 불량','31%','0.52%',1,'작동 불량'],['사용 중','29%','0.11%',0,'소음·물 샘'],['A / S','16%','22%',1,'수리 지연','3일 내 미출고']];
+function drawJ(){$('jw').innerHTML=JS.map(function(j,i){return'<div class="js"><div class="chev">'+j[0]+'</div><div class="jc" id="jc'+i+'"><span class="lb">문의 비중</span><span class="lb r">'+(j[5]||'이탈률')+'</span><span class="v">'+j[1]+'</span><span class="v r'+(j[3]?' hot':'')+'">'+j[2]+'</span><span class="why">가장 많은 문의 <b>'+j[4]+'</b></span></div></div>'}).join('')}
+
+var PT=[
+ ['무선 탁상 선풍기',662,436,'3.9',14.2,'31%','타는 냄새 6건','u','u'],
+ ['초음파 가습기 3L',539,365,'4.1',11.8,'24%','물 샘 38건','n','m'],
+ ['BLDC 드라이기',451,565,'4.5',6.1,'12%','배송 지연','n','m'],
+ ['음파 전동칫솔',331,263,'4.6',4.3,'9%','—','n','l']
+];
+var GR={u:['rk-u','긴급'],h:['rk-h','높음'],m:['rk-m','보통'],l:['rk-l','관찰']};
+function drawP(hi){$('pt').innerHTML=PT.map(function(p,i){var g=GR[p[8]];return'<tr'+(i===hi?' class="hi"':'')+' id="pr'+i+'"><td>'+p[0]+'</td><td>'+p[1]+'</td><td>'+p[2]+'</td><td>★'+p[3]+'</td><td>'+p[4].toFixed(1)+'</td><td>'+p[5]+'</td><td class="sg"><span class="sig '+p[7]+'">'+p[6]+'</span></td><td><span class="lv '+g[0]+'">'+g[1]+'</span></td></tr>'}).join('')}
+var TK=[[1,'#49','물류팀','BLDC 드라이기 · 배송','택배 지연 구간 확인','배송 일정 문의 8주 평균의 1.6배','90만 원'],
+        [2,'#47','MD','음파 전동칫솔 · 사용 중','모드 안내 카드 동봉','사용 방법 문의 급증','60만 원',[34,15]]];
+function tkHtml(t,nw){return'<div class="tk'+(nw?' new':'')+'"><span class="id">'+t[1]+' · '+t[2]+'</span><b>'+t[3]+'</b>'+t[4]+'<span class="why">이유 · '+t[5]+'</span>'+
+  (t[7]?'<div class="bar2">전 '+t[7][0]+'<i style="width:'+t[7][0]*3+'px"></i> 후 '+t[7][1]+'<i class="af" style="width:'+t[7][1]*3+'px"></i></div><span class="res">VOC −'+Math.round((1-t[7][1]/t[7][0])*100)+'% · 닫음 ✓</span>':'<span class="loss">줄일 수 있는 손실 '+t[6]+'</span>')+'</div>'}
+function drawT(nw){[0,1,2].forEach(function(c){$('l'+c).innerHTML=TK.filter(function(t){return t[0]===c}).slice(-1).map(function(t){return tkHtml(t,t===nw)}).join('')})}
+var EV=[
+ {p:1,st:3,tk:'tk-leak',from:38,n:3,sig:['물 샘 ▲2.4배','h'],gr:'h',ticket:['품질팀','초음파 가습기 3L · 사용 중','물통 패킹 누수 점검','물 샘 8주 평균의 2.4배','380만 원']},
+ {p:0,st:2,tk:'tk-burn',from:6,n:1,sig:['타는 냄새 7건','u'],gr:'u',ticket:['품질팀','무선 탁상 선풍기 · 초기 불량','충전 단자 발열 조사','안전 신호 · 1건이라도 긴급','520만 원']}
+];
+var ei=0,tkno=52,c2=$('c2');
+function next2(){
+  var e=EV[ei%EV.length];ei++;var p=PT[e.p];
+  if(e.p===1){p[6]='물 샘 38건';p[7]='n';p[8]='m';p[4]=11.8}else{p[6]='타는 냄새 6건';p[4]=14.2}
+  drawP(e.p);var v=e.from,k=0;ping($('jc'+e.st),1600);
+  (function up(){if(k<e.n){v+=e.p===1?1:1;k++;$(e.tk).textContent=v;bump($(e.tk));p[4]+=0.2;drawP(e.p);later(up,380)}else{
+    p[6]=e.sig[0];p[7]=e.sig[1];p[8]=e.gr;drawP(e.p);zing($('pr'+e.p).querySelector('.sig'),e.gr==='u');
+    later(function(){
+      var t=[0,'#'+(tkno++)].concat(e.ticket);
+      flyChip(c2,$('tr2'),'개선 요청 '+t[1]+' · '+t[2],$('pr'+e.p),$('l0'),function(){TK.push(t);drawT(t);
+        later(function(){var old=TK.filter(function(x){return x[0]===1})[0];if(old){old[0]=2;old[7]=[30+ei%3*4,14+ei%3*2]}t[0]=1;drawT()},2200)});
+    },500);
+  }})();
+  later(next2,6200);
+}
+
+
+var RU=[
+ {n:'법적 위협',lv:['rk-u','긴급'],to:'@CS팀장',w:['고소','소비자원','신고','변호사'],h:3},
+ {n:'안전 문제',lv:['rk-u','긴급'],to:'@품질팀장 · 티켓',w:['타는 냄새','뜨거워요','연기','화상'],h:1},
+ {n:'거친 응대',lv:['rk-h','높음'],to:'@CS팀장 · 권장 문장',w:['고객 탓하기','퉁명한 말투','책임 회피','정책과 다른 안내'],ai:1,h:2},
+ {n:'지켜보는 말',lv:['rk-l','관찰'],to:'알림 없이 주간 리포트로',w:['소음','물 샘','조용해요'],h:41,soft:1}
+];
+function drawRU(hi,on){$('rules').innerHTML=RU.map(function(r,i){return'<div class="rl'+(i===hi?' fire':'')+(r.soft?' soft':'')+'"><div class="nm"><span class="lv '+r.lv[0]+'">'+r.lv[1]+'</span>'+r.n+'<small>→ '+r.to+'</small></div>'+
+  '<div class="ws">'+(r.ai?'<span class="ai">AI가 문맥으로 판단</span>':'')+r.w.map(function(w){return'<span'+(i===hi&&on.indexOf(w)>=0?' class="on"':'')+'>'+w+'</span>'}).join('')+'</div><div class="hc">'+r.h+'<small>건</small></div></div>'}).join('')}
+var AG=[['김상담',138,84,1],['이상담',151,88,0],['박상담',162,95,0],['가상 CS 직원',1412,98,0]];
+function drawA(hi){$('ag').innerHTML=AG.map(function(a,i){var c=a[2]>=90?'g':a[2]>=75?'y':'r';return'<tr'+(i===hi?' class="hit"':'')+'><td><span class="av'+(i===3?' ai':'')+'">'+(i===3?'AI':a[0][0])+'</span>'+a[0]+'</td><td>'+fmt(a[1])+'</td><td><span class="sc '+c+'">'+a[2]+'</span></td><td><span class="wn'+(a[3]?' on':'')+'">'+a[3]+'</span></td></tr>'}).join('')}
+var mm=42;
+function slack(k,ch,t,mn,b){var box=$('skms'),e=document.createElement('div');e.className='sm fresh';
+  e.innerHTML=logo('zt')+'<div><div class="sn"><b>제로톡 VOC</b><em>앱</em><time>오전 10:'+mm+'</time><span class="sch">#'+ch+'</span></div><div class="stt '+k+'">'+t+'</div><div><span class="mn">'+mn+'</span> '+b+'</div></div>';
+  [].forEach.call(box.children,function(x){x.classList.remove('fresh')});box.insertBefore(e,box.firstChild);while(box.children.length>2)box.removeChild(box.lastChild)}
+function zt(k,ic,t,b){var box=$('znms'),e=document.createElement('div');e.className='zi '+k;e.innerHTML='<i>'+ic+'</i><div><b>'+t+'</b>'+b+' <small>· 10:'+mm+'</small></div>';box.insertBefore(e,box.firstChild);while(box.children.length>3)box.removeChild(box.lastChild)}
+function mark(tx,ws){ws.forEach(function(w){tx=tx.split(w).join('<mark>'+w+'</mark>')});return tx}
+var SC=[
+ {k:'chat',ag:1,lines:[['a','A/S 접수 확인했습니다. 수리 일정 안내드릴게요.'],['c','벌써 2주째예요. 환불 안 해주면 소비자원에 신고하고 고소하겠습니다.']],r:0,w:['소비자원','신고','고소'],
+  sk:['u','cs-긴급','긴급 · 법적 위협 발언','@CS팀장','초음파 가습기 3L · 상담원 이상담<br>“…소비자원에 신고하고 고소하겠습니다”'],
+  zt:['u','!','법적 위협 · 지금 넘겨받으세요','이상담 상담 중 · 가습기 A/S 2주 지연']},
+ {k:'chat',ag:0,lines:[['c','교환 신청했는데 언제 와요?'],['a','공지에 다 써 있는데요.']],r:2,w:['고객 탓하기','퉁명한 말투'],flags:['고객 탓','퉁명'],sug:'확인해 볼게요. 교환 상품은 내일 출고 예정이에요.',
+  sk:['t','cs-긴급','거친 응대 · 김상담','@CS팀장','“공지에 다 써 있는데요.” · 권장 문장 보냄'],
+  zt:['t','◎','응대 주의 · 김상담','권장 문장을 상담원 화면에 보냈어요']},
+ {k:'rv',src:'cp',star:1,pd:'무선 탁상 선풍기',tx:'충전하다가 타는 냄새가 나서 무서워서 못 쓰겠어요',r:1,w:['타는 냄새'],
+  sk:['u','품질-알림','긴급 · 안전 문제','@품질팀장','쿠팡 리뷰 ★1 · 무선 탁상 선풍기<br>“충전하다가 타는 냄새가 나서…”'],
+  zt:['u','!','안전 문제 · 개선 요청 #53','품질팀에 넘겼어요']},
+ {k:'rv',src:'oy',star:4,pd:'BLDC 드라이기',tx:'잘 마르는데 소음이 조금 있어요',r:3,w:['소음'],sk:null,
+  zt:['','·','지켜보는 말 「소음」 +1','알림 없이 주간 리포트에 쌓아요']}
+];
+var ci=0;
+function next3(){
+  var c=SC[ci%SC.length];ci++;mm++;var ms=$('ms');ms.innerHTML='';drawRU(-1,[]);drawA(-1);
+  var hit=function(){var mk=$('ms').querySelector('mark')||$('ms').lastElementChild;if(mk)zing(mk,!!c.sk);RU[c.r].h++;drawRU(c.r,c.w);if(c.sk)slack.apply(null,c.sk);zt.apply(null,c.zt)};
+  if(c.k==='rv'){
+    var s=SRC[c.src];$('chh').innerHTML=logo(c.src,1)+s[1]+' · 새 리뷰<small>● 방금 등록</small>';
+    later(function(){var v=document.createElement('div');v.className='rv';v.innerHTML='<div class="ih">'+stars(c.star)+'<span class="pd">'+c.pd+'</span></div><div class="tx">'+c.tx+'</div>';ms.appendChild(v);
+      later(function(){v.classList.add(c.sk?'bad':'soft');v.querySelector('.tx').innerHTML=mark(c.tx,c.w);hit()},900)},200);
+  }else{
+    var a=AG[c.ag];$('chh').innerHTML=logo('zt',1)+'제로톡 상담 · 상담원 '+a[0]+'<small>● 응대 중</small>';
+    c.lines.forEach(function(ln,i){later(function(){
+      var m=document.createElement('div');m.className='m '+ln[0];m.innerHTML='<span class="who">'+(ln[0]==='c'?'고객':a[0])+'</span><span class="tx">'+ln[1]+'</span>';ms.appendChild(m);
+      if(i===c.lines.length-1)later(function(){
+        m.classList.add('bad');
+        if(c.r===0)m.querySelector('.tx').innerHTML=mark(ln[1],c.w);
+        if(c.flags){var fl=document.createElement('div');fl.className='fl';fl.innerHTML=c.flags.map(function(x){return'<span>'+x+'</span>'}).join('');m.appendChild(fl);a[3]++;a[2]=Math.max(50,a[2]-4);drawA(c.ag)}
+        hit();
+        if(c.sug)later(function(){var s=document.createElement('div');s.className='sug';s.innerHTML='<b>AI 권장 문장 · 상담원 화면에 바로</b>“'+c.sug+'”';ms.appendChild(s)},900);
+      },800);
+    },200+i*1100)});
+  }
+  later(next3,6000);
+}
+
+
+$('znh').insertAdjacentHTML('afterbegin',logo('zt',1));
+drawSrc(-1);drawStars();drawTy(-1);drawIs(-1);drawFt();
+drawJ();drawP(-1);drawT();drawRU(-1,[]);drawA(-1);
+slack('u','품질-알림','급증 · 초음파 가습기 「물 샘」','@품질팀장','평소의 2.4배 → 개선 요청 #52');
+zt('r','✓','주간 VOC 리포트가 도착했어요','불만 1위 물 샘 ▲32% · 대표·MD·품질·CS팀장');
+later(next1,400);later(next2,900);later(next3,600);
+
+
+var sl=[].slice.call(document.querySelectorAll('.sl')),cur=0;
+function show(n){cur=Math.max(0,Math.min(sl.length-1,n));sl.forEach(function(s,k){s.classList.toggle('cur',k===cur)});$('pn').textContent=(cur+1)+' / '+sl.length;requestAnimationFrame(scale)}
+$('present').addEventListener('click',function(){document.body.classList.add('pres');show(cur);var d=document.documentElement;if(d.requestFullscreen)d.requestFullscreen().catch(function(){})});
+function stop(){document.body.classList.remove('pres');sl.forEach(function(s){s.classList.remove('cur')});if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(function(){});requestAnimationFrame(scale)}
+$('prev').addEventListener('click',function(){show(cur-1)});$('next').addEventListener('click',function(){show(cur+1)});$('exit').addEventListener('click',stop);
+document.addEventListener('keydown',function(e){if(!document.body.classList.contains('pres'))return;if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();show(cur+1)}else if(e.key==='ArrowLeft')show(cur-1);else if(e.key==='Escape')stop()});
+document.addEventListener('fullscreenchange',function(){if(!document.fullscreenElement&&document.body.classList.contains('pres'))stop()});
+})();
+<\/script>
+
+</script></div></div></section>
+
+
+<div class="pctl" aria-label="발표 조작"><button type="button" id="pv" aria-label="이전 장">←</button><span id="pn"></span><button type="button" id="nx" aria-label="다음 장">→</button><button type="button" id="px">나가기</button></div>
+
+<script src="deck.js"></script><script src="boot.js"></script></body></html>
